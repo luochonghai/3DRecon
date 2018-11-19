@@ -1,0 +1,1 @@
+HOG(Histogram of Oriented Gradiant)：局部目标的表象及形状能被梯度或边缘的方向密度很好地描述。

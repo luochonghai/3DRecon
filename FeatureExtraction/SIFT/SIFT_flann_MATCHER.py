@@ -8,8 +8,9 @@ psd_img_2 = cv2.imread(path_file+'1.jpg', cv2.IMREAD_GRAYSCALE)
 #psd_img_1 = cv2.imread(path_file+'01.jpg')
 #psd_img_2 = cv2.imread(path_file+'0.jpg')
 
-# SIFT特征计算
+# SIFT/SURF特征计算
 sift = cv2.xfeatures2d.SIFT_create()
+#sift = cv2.xfeatures2d.SURF_create()
 
 psd_kp1, psd_des1 = sift.detectAndCompute(psd_img_1, None)
 psd_kp2, psd_des2 = sift.detectAndCompute(psd_img_2, None)
